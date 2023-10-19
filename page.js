@@ -126,6 +126,9 @@ RigBot.addEventListener('click', function() {
 			enlace.style.top = '50%';
 			enlace.style.left = '50%';
 			document.body.appendChild(enlace);
+			webgazer.pause();
+			webgazer.resume();
+			console.log("ENLACEEEEEEEEE");
 		}
 		estado = "val";
 	}

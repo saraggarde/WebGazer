@@ -134,9 +134,7 @@ RigBot.addEventListener('click', function() {
 
 webgazer.begin()
 webgazer.setGazeListener(function(data, elapsedTime) {
-	if (data == null) {
-		return;
-	}
+	if (data == null) return;
 	var xprediction = data.x;
 	var yprediction = data.y;
         contenido += (xprediction + ", " + yprediction + "\n");

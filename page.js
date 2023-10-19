@@ -1,5 +1,6 @@
 console.log("Ancho de pantalla: " + screen.width);
 console.log("Alto de pantalla: " + screen.height);
+
 var estado = "cal";
 var clicks = 0;
 var LeftTop = document.getElementById("LeftTop");

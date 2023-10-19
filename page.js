@@ -24,6 +24,10 @@ RigTop.style.display = "none";
 RigMid.style.display = "none";
 RigBot.style.display = "none";
 
+// Crear un objeto Blob con el texto que deseas guardar
+var contenido = 'hrhrtjrjrtjtrjtrr';
+
+
 // 2
 LeftTop.addEventListener('click', function() {
 	console.log("LeftTop: " + LeftTop.offsetLeft + ", "+ LeftTop.offsetTop);
@@ -112,9 +116,19 @@ RigBot.addEventListener('click', function() {
 		clicks = 0;
 		RigBot.style.display = "none";
 		if (estado == "cal") MidMid.style.display = "block";
+		if (estado == "val") {
+			var blob = new Blob([contenido], { type: 'text/plain' });
+			var enlace = document.createElement('a');
+			enlace.href = URL.createObjectURL(blob);
+			enlace.download = 'archivo.txt';
+			enlace.innerHTML = 'Descargar archivo';
+			document.body.appendChild(enlace);
+		}
 		estado = "val";
 	}
 });
+
+
 
 webgazer.begin()
 webgazer.setGazeListener(function(data, elapsedTime) {

@@ -1,6 +1,6 @@
 console.log("Ancho de pantalla: " + screen.width);
 console.log("Alto de pantalla: " + screen.height);
-var estado = 0;
+var estado = "cal";
 var clicks = 0;
 var LeftTop = document.getElementById("LeftTop");
 var LeftMid = document.getElementById("LeftMid");
@@ -28,7 +28,9 @@ LeftTop.addEventListener('click', function() {
 	console.log("LeftTop: " + LeftTop.offsetLeft + ", "+ LeftTop.offsetTop);
 	clicks ++;
 	if (clicks == 5) {
-		LeftTop.style.display = "block";
+		clicks = 0;
+		x.style.display = "none";
+		x.style.display = "block";
 	}
 });
 LeftMid.addEventListener('click', function() {

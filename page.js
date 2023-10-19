@@ -111,8 +111,8 @@ RigBot.addEventListener('click', function() {
 		clicks = 0;
 		RigBot.style.display = "none";
 		if (estado == "cal") MidMid.style.display = "block";
+		estado = "val";
 	}
-	estado = "val";
 });
 
 webgazer.begin()

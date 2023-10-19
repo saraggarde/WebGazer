@@ -143,5 +143,5 @@ webgazer.setGazeListener(function(data, elapsedTime) {
 	}
 	var xprediction = data.x; //these x coordinates are relative to the viewport
 	var yprediction = data.y; //these y coordinates are relative to the viewport
-   //console.log(data.x, data.y)
+        contenido += (data.x + ", " data.y + "\n");
 }).begin();

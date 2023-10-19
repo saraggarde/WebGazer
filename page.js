@@ -139,5 +139,5 @@ webgazer.setGazeListener(function(data, elapsedTime) {
 	}
 	var xprediction = data.x;
 	var yprediction = data.y;
-        contenido += (data.x + ", " data.y + "\n");
+        contenido += (xprediction + ", " + yprediction + "\n");
 }).begin();

@@ -1,6 +1,7 @@
 console.log("Ancho de pantalla: " + screen.width);
 console.log("Alto de pantalla: " + screen.height);
 var estado = 0;
+var clicks = 0;
 var LeftTop = document.getElementById("LeftTop");
 var LeftMid = document.getElementById("LeftMid");
 var LeftBot = document.getElementById("LeftBot");
@@ -23,9 +24,12 @@ RigTop.style.display = "none";
 RigMid.style.display = "none";
 RigBot.style.display = "none";
 
-
 LeftTop.addEventListener('click', function() {
-  console.log("LeftTop: " + LeftTop.offsetLeft + ", "+ LeftTop.offsetTop);
+	console.log("LeftTop: " + LeftTop.offsetLeft + ", "+ LeftTop.offsetTop);
+	clicks ++;
+	if (clicks == 5) {
+		LeftTop.style.display = "block";
+	}
 });
 LeftMid.addEventListener('click', function() {
   console.log("LeftMid: " + LeftMid.offsetLeft + ", "+ LeftMid.offsetTop);

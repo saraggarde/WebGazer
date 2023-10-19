@@ -34,30 +34,80 @@ LeftTop.addEventListener('click', function() {
 	}
 });
 LeftMid.addEventListener('click', function() {
-  console.log("LeftMid: " + LeftMid.offsetLeft + ", "+ LeftMid.offsetTop);
+	console.log("LeftMid: " + LeftMid.offsetLeft + ", "+ LeftMid.offsetTop);
+	clicks ++;
+	if (clicks == 5) {
+		clicks = 0;
+		x.style.display = "none";
+		x.style.display = "block";
+	}
 });
 LeftBot.addEventListener('click', function() {
-  console.log("LeftBot: " + LeftBot.offsetLeft + ", "+ LeftBot.offsetTop);
+	console.log("LeftBot: " + LeftBot.offsetLeft + ", "+ LeftBot.offsetTop);
+	clicks ++;
+	if (clicks == 5) {
+		clicks = 0;
+		x.style.display = "none";
+		x.style.display = "block";
+	}
 });
 
 MidTop.addEventListener('click', function() {
-  console.log("MidTop: " + MidTop.offsetLeft + ", "+ MidTop.offsetTop);
+	console.log("MidTop: " + MidTop.offsetLeft + ", "+ MidTop.offsetTop);
+	clicks ++;
+	if (clicks == 5) {
+		clicks = 0;
+		x.style.display = "none";
+		x.style.display = "block";
+	}
 });
 MidMid.addEventListener('click', function() {
-  console.log("MidMid: " + MidMid.offsetLeft + ", "+ MidMid.offsetTop);
+	console.log("MidMid: " + MidMid.offsetLeft + ", "+ MidMid.offsetTop);
+	clicks ++;
+	if (clicks == 5) {
+		clicks = 0;
+		x.style.display = "none";
+		x.style.display = "block";
+	}
 });
 MidBot.addEventListener('click', function() {
-  console.log("MidBot: " + MidBot.offsetLeft + ", "+ MidBot.offsetTop);
+	console.log("MidBot: " + MidBot.offsetLeft + ", "+ MidBot.offsetTop);
+	clicks ++;
+	if (clicks == 5) {
+		clicks = 0;
+		x.style.display = "none";
+		x.style.display = "block";
+	}
 });
 
 RigTop.addEventListener('click', function() {
-  console.log("RigTop: " + RigTop.offsetLeft + ", "+ RigTop.offsetTop);
+	console.log("RigTop: " + RigTop.offsetLeft + ", "+ RigTop.offsetTop);
+	clicks ++;
+	if (clicks == 5) {
+		clicks = 0;
+		x.style.display = "none";
+		x.style.display = "block";
+	}
 });
 RigMid.addEventListener('click', function() {
-  console.log("RigMid: " + RigMid.offsetLeft + ", "+ RigMid.offsetTop);
+	console.log("RigMid: " + RigMid.offsetLeft + ", "+ RigMid.offsetTop);
+	clicks ++;
+	if (clicks == 5) {
+		clicks = 0;
+		x.style.display = "none";
+		x.style.display = "block";
+	}
 });
+// 9
 RigBot.addEventListener('click', function() {
-  console.log("RigBot: " + RigBot.offsetLeft + ", "+ RigBot.offsetTop);
+	console.log("RigBot: " + RigBot.offsetLeft + ", "+ RigBot.offsetTop);
+	clicks ++;
+	if (clicks == 5) {
+		clicks = 0;
+		x.style.display = "none";
+		x.style.display = "block";
+	}
+	estado = "val";
 });
 
 webgazer.begin()

@@ -122,6 +122,9 @@ RigBot.addEventListener('click', function() {
 			enlace.href = URL.createObjectURL(blob);
 			enlace.download = 'archivo.txt';
 			enlace.innerHTML = 'Descargar archivo';
+			enlace.style.position = 'fixed';
+			enlace.style.top = '50%';
+			enlace.style.left = '50%';
 			document.body.appendChild(enlace);
 		}
 		estado = "val";

@@ -25,12 +25,12 @@ RigMid.style.display = "none";
 RigBot.style.display = "none";
 
 // Crear un objeto Blob con el texto que deseas guardar
-var contenido = 'hrhrtjrjrtjtrjtrr';
+var contenido = '';
 
 
 // 2
 LeftTop.addEventListener('click', function() {
-	console.log("LeftTop: " + LeftTop.offsetLeft + ", "+ LeftTop.offsetTop);
+	contenido += ("LeftTop: " + LeftTop.offsetLeft + ", "+ LeftTop.offsetTop + "\n");
 	clicks ++;
 	if (clicks == 5) {
 		clicks = 0;
@@ -40,7 +40,7 @@ LeftTop.addEventListener('click', function() {
 });
 //5
 LeftMid.addEventListener('click', function() {
-	console.log("LeftMid: " + LeftMid.offsetLeft + ", "+ LeftMid.offsetTop);
+	contenido += ("LeftMid: " + LeftMid.offsetLeft + ", "+ LeftMid.offsetTop + "\n");
 	clicks ++;
 	if (clicks == 5) {
 		clicks = 0;
@@ -50,7 +50,7 @@ LeftMid.addEventListener('click', function() {
 });
 // 7
 LeftBot.addEventListener('click', function() {
-	console.log("LeftBot: " + LeftBot.offsetLeft + ", "+ LeftBot.offsetTop);
+	contenido += ("LeftBot: " + LeftBot.offsetLeft + ", "+ LeftBot.offsetTop + "\n");
 	clicks ++;
 	if (clicks == 5) {
 		clicks = 0;
@@ -60,7 +60,7 @@ LeftBot.addEventListener('click', function() {
 });
 // 3
 MidTop.addEventListener('click', function() {
-	console.log("MidTop: " + MidTop.offsetLeft + ", "+ MidTop.offsetTop);
+	contenido += ("MidTop: " + MidTop.offsetLeft + ", "+ MidTop.offsetTop + "\n");
 	clicks ++;
 	if (clicks == 5) {
 		clicks = 0;
@@ -70,7 +70,7 @@ MidTop.addEventListener('click', function() {
 });
 // 1
 MidMid.addEventListener('click', function() {
-	console.log("MidMid: " + MidMid.offsetLeft + ", "+ MidMid.offsetTop);
+	contenido += ("MidMid: " + MidMid.offsetLeft + ", "+ MidMid.offsetTop + "\n");
 	clicks ++;
 	if (clicks == 5) {
 		clicks = 0;
@@ -80,7 +80,7 @@ MidMid.addEventListener('click', function() {
 });
 // 8
 MidBot.addEventListener('click', function() {
-	console.log("MidBot: " + MidBot.offsetLeft + ", "+ MidBot.offsetTop);
+	contenido += ("MidBot: " + MidBot.offsetLeft + ", "+ MidBot.offsetTop + "\n");
 	clicks ++;
 	if (clicks == 5) {
 		clicks = 0;
@@ -90,7 +90,7 @@ MidBot.addEventListener('click', function() {
 });
 //4
 RigTop.addEventListener('click', function() {
-	console.log("RigTop: " + RigTop.offsetLeft + ", "+ RigTop.offsetTop);
+	contenido += ("RigTop: " + RigTop.offsetLeft + ", "+ RigTop.offsetTop + "\n");
 	clicks ++;
 	if (clicks == 5) {
 		clicks = 0;
@@ -100,7 +100,7 @@ RigTop.addEventListener('click', function() {
 });
 // 6
 RigMid.addEventListener('click', function() {
-	console.log("RigMid: " + RigMid.offsetLeft + ", "+ RigMid.offsetTop);
+	contenido += ("RigMid: " + RigMid.offsetLeft + ", "+ RigMid.offsetTop + "\n");
 	clicks ++;
 	if (clicks == 5) {
 		clicks = 0;
@@ -110,7 +110,7 @@ RigMid.addEventListener('click', function() {
 });
 // 9
 RigBot.addEventListener('click', function() {
-	console.log("RigBot: " + RigBot.offsetLeft + ", "+ RigBot.offsetTop);
+	contenido += ("RigBot: " + RigBot.offsetLeft + ", "+ RigBot.offsetTop + "\n");
 	clicks ++;
 	if (clicks == 5) {
 		clicks = 0;
@@ -128,7 +128,7 @@ RigBot.addEventListener('click', function() {
 			document.body.appendChild(enlace);
 			webgazer.pause();
 			webgazer.resume();
-			console.log("ENLACEEEEEEEEE");
+			console.log("Fin");
 		}
 		estado = "val";
 	}

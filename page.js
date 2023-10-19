@@ -16,3 +16,5 @@ function mostrarAlerta() {
 
 // Llamada a la función cuando se hace clic en un botón
 document.getElementById("boton").addEventListener("click", mostrarAlerta);
+
+webgazer.begin()

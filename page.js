@@ -4,7 +4,7 @@ var mensaje = "¡Hola, mundo!";
 // Muestra el mensaje en la consola del navegador
 console.log(mensaje);
 
-document.getElementById('miBoton').addEventListener('click', function() {
+document.getElementById('LeftMid').addEventListener('click', function() {
   // Agrega aquí el código que se ejecutará cuando se haga clic en el botón
   alert('¡Hiciste clic en el botón!');
 });

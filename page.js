@@ -3,6 +3,8 @@ console.log("Alto de pantalla: " + screen.height);
 
 var estado = "cal";
 var clicks = 0;
+var contenido = '';
+
 var LeftTop = document.getElementById("LeftTop");
 var LeftMid = document.getElementById("LeftMid");
 var LeftBot = document.getElementById("LeftBot");
@@ -23,10 +25,6 @@ MidBot.style.display = "none";
 RigTop.style.display = "none";
 RigMid.style.display = "none";
 RigBot.style.display = "none";
-
-// Crear un objeto Blob con el texto que deseas guardar
-var contenido = '';
-
 
 // 2
 LeftTop.addEventListener('click', function() {
@@ -134,14 +132,12 @@ RigBot.addEventListener('click', function() {
 	}
 });
 
-
-
 webgazer.begin()
 webgazer.setGazeListener(function(data, elapsedTime) {
 	if (data == null) {
 		return;
 	}
-	var xprediction = data.x; //these x coordinates are relative to the viewport
-	var yprediction = data.y; //these y coordinates are relative to the viewport
+	var xprediction = data.x;
+	var yprediction = data.y;
         contenido += (data.x + ", " data.y + "\n");
 }).begin();

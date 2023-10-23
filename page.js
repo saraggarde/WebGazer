@@ -121,7 +121,7 @@ RigBot.addEventListener('click', function() {
 });
 
 function mostrarSiguiente() {
-		// 9
+	// 9
 	if (RigBot.style.display == "block") {
 		RigBot.style.display = "none";
 		var blob = new Blob([contenido], { type: 'text/plain' });
@@ -137,35 +137,35 @@ function mostrarSiguiente() {
 		webgazer.resume();
 		console.log("Fin");
 	}
-		// 8
+	// 8
 	if (MidBot.style.display == "block") {
 		MidBot.style.display = "none";
 		RigBot.style.display = "block";
 		setTimeout(mostrarSiguiente, 5000);
 		contenido += ("Val_RigBot: " + RigBot.offsetLeft + ", "+ RigBot.offsetTop + "\n");
 	}
-		// 7
+	// 7
 	if (LeftBot.style.display == "block") {
 		LeftBot.style.display = "none";
 		MidBot.style.display = "block";
 		setTimeout(mostrarSiguiente, 5000);
 		contenido += ("Val_MidBot: " + MidBot.offsetLeft + ", "+ MidBot.offsetTop + "\n");
 	}
-		// 6
+	// 6
 	if (RigMid.style.display == "block") {
 		RigMid.style.display = "none";
 		LeftBot.style.display = "block";
 		setTimeout(mostrarSiguiente, 5000);
 		contenido += ("Val_LeftBot: " + LeftBot.offsetLeft + ", "+ LeftBot.offsetTop + "\n");
 	}
-		// 5
+	// 5
 	if (LeftMid.style.display == "block") {
 		LeftMid.style.display = "none";
 		RigMid.style.display = "block";
 		setTimeout(mostrarSiguiente, 5000);
 		contenido += ("Val_RigMid: " + RigMid.offsetLeft + ", "+ RigMid.offsetTop + "\n");
 	}
-		// 4
+	// 4
 	if (RigTop.style.display == "block") {
 		RigTop.style.display = "none";
 		LeftMid.style.display = "block";

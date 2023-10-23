@@ -196,7 +196,7 @@ function mostrarSiguiente() {
 }
 
 webgazer.begin()
-webgazer.setRegression("ridge");
+webgazer.setRegression("weightedRidge");
 webgazer.setGazeListener(function(data, elapsedTime) {
 	if (data == null) return;
 	var xprediction = data.x;

@@ -30,7 +30,7 @@ RigBot.style.display = "none";
 LeftTop.addEventListener('click', function() {
 	contenido += ("LeftTop: " + LeftTop.offsetLeft + ", "+ LeftTop.offsetTop + "\n");
 	clicks ++;
-	if (clicks == 5) {
+	if (clicks == 5 && estado == "cal") {
 		clicks = 0;
 		LeftTop.style.display = "none";
 		MidTop.style.display = "block";
@@ -40,7 +40,7 @@ LeftTop.addEventListener('click', function() {
 LeftMid.addEventListener('click', function() {
 	contenido += ("LeftMid: " + LeftMid.offsetLeft + ", "+ LeftMid.offsetTop + "\n");
 	clicks ++;
-	if (clicks == 5) {
+	if (clicks == 5 && estado == "cal") {
 		clicks = 0;
 		LeftMid.style.display = "none";
 		RigMid.style.display = "block";
@@ -50,7 +50,7 @@ LeftMid.addEventListener('click', function() {
 LeftBot.addEventListener('click', function() {
 	contenido += ("LeftBot: " + LeftBot.offsetLeft + ", "+ LeftBot.offsetTop + "\n");
 	clicks ++;
-	if (clicks == 5) {
+	if (clicks == 5 && estado == "cal") {
 		clicks = 0;
 		LeftBot.style.display = "none";
 		MidBot.style.display = "block";
@@ -60,7 +60,7 @@ LeftBot.addEventListener('click', function() {
 MidTop.addEventListener('click', function() {
 	contenido += ("MidTop: " + MidTop.offsetLeft + ", "+ MidTop.offsetTop + "\n");
 	clicks ++;
-	if (clicks == 5) {
+	if (clicks == 5 && estado == "cal") {
 		clicks = 0;
 		MidTop.style.display = "none";
 		RigTop.style.display = "block";
@@ -70,7 +70,7 @@ MidTop.addEventListener('click', function() {
 MidMid.addEventListener('click', function() {
 	contenido += ("MidMid: " + MidMid.offsetLeft + ", "+ MidMid.offsetTop + "\n");
 	clicks ++;
-	if (clicks == 5) {
+	if (clicks == 5 && estado == "cal") {
 		clicks = 0;
 		MidMid.style.display = "none";
 		LeftTop.style.display = "block";
@@ -80,7 +80,7 @@ MidMid.addEventListener('click', function() {
 MidBot.addEventListener('click', function() {
 	contenido += ("MidBot: " + MidBot.offsetLeft + ", "+ MidBot.offsetTop + "\n");
 	clicks ++;
-	if (clicks == 5) {
+	if (clicks == 5 && estado == "cal") {
 		clicks = 0;
 		MidBot.style.display = "none";
 		RigBot.style.display = "block";
@@ -90,7 +90,7 @@ MidBot.addEventListener('click', function() {
 RigTop.addEventListener('click', function() {
 	contenido += ("RigTop: " + RigTop.offsetLeft + ", "+ RigTop.offsetTop + "\n");
 	clicks ++;
-	if (clicks == 5) {
+	if (clicks == 5 && estado == "cal") {
 		clicks = 0;
 		RigTop.style.display = "none";
 		LeftMid.style.display = "block";
@@ -100,7 +100,7 @@ RigTop.addEventListener('click', function() {
 RigMid.addEventListener('click', function() {
 	contenido += ("RigMid: " + RigMid.offsetLeft + ", "+ RigMid.offsetTop + "\n");
 	clicks ++;
-	if (clicks == 5) {
+	if (clicks == 5 && estado == "cal") {
 		clicks = 0;
 		RigMid.style.display = "none";
 		LeftBot.style.display = "block";
@@ -110,7 +110,7 @@ RigMid.addEventListener('click', function() {
 RigBot.addEventListener('click', function() {
 	contenido += ("RigBot: " + RigBot.offsetLeft + ", "+ RigBot.offsetTop + "\n");
 	clicks ++;
-	if (clicks == 5) {
+	if (clicks == 5 && estado == "cal") {
 		clicks = 0;
 		RigBot.style.display = "none";
 		MidMid.style.display = "block";

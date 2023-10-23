@@ -193,7 +193,6 @@ function mostrarSiguiente() {
 		webgazer.resume();
 		console.log("Fin");
 	}
-	
 }
 
 webgazer.begin()

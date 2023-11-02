@@ -195,10 +195,11 @@ function mostrarSiguiente() {
 	}
 }
 
-webgazer.begin()
+webgazer.begin();
+webgazer.setRegression("weightedRidge");
 webgazer.setGazeListener(function(data, elapsedTime) {
 	if (data == null) return;
 	var xprediction = data.x;
 	var yprediction = data.y;
-        contenido += (xprediction + ", " + yprediction + "\n");
+        contenido += (xprediction + ", " + yprediction + ", " + elapsedTime + "\n");
 }).begin();
